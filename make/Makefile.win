@@ -1,0 +1,5 @@
+all: src/main.cpp src/functions.cpp
+	g++ -o main src/main.cpp src/functions.cpp
+
+clean:
+	del /F /Q main.exe
