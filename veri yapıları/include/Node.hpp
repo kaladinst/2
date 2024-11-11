@@ -1,10 +1,12 @@
 #ifndef NODE_HPP
 #define NODE_HPP
-using namespace std;
+
+#include <string>
+
 struct Node {
-    string data;
+    std::string data;
     Node* next;
     Node* prev;    
 };
 
-#endif 
+#endif

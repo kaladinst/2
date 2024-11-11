@@ -2,14 +2,15 @@
 #define ITERATOR_HPP
 
 #include "Node.hpp"
-using namespace std;
+#include <string>
+
 class DLinkedList;
 
 class Iterator {
 public:
     Iterator(Node* p) : current(p) {}
 
-    string& operator*() const {
+    std::string& operator*() const {
         return current->data;
     }
 
@@ -18,12 +19,21 @@ public:
         return *this;
     }
 
+    Iterator& operator--() {
+        current = current->prev;
+        return *this;
+    }
+
     bool operator!=(const Iterator& other) const {
         return current != other.current;
     }
+    
+    bool operator==(const Iterator& other) const {
+        return current == other.current;
+    }
 
 private:
-   Node* current;
+    Node* current;
 };
 
 #endif
