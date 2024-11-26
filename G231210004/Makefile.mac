@@ -1,9 +1,0 @@
-all: bin/main
-
-bin/main: src/main.cpp src/dLinkedList.cpp
-	mkdir -p bin
-	g++ -std=c++11 src/main.cpp src/dLinkedList.cpp -o bin/main
-
-clean: 
-	echo "Cleaning up..."
-	rm -f src/*.o bin/main
