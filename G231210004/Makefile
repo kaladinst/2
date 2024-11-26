@@ -1,0 +1,8 @@
+all: bin\main.exe
+
+bin\main.exe: src\main.cpp src\dLinkedList.cpp
+	if not exist bin mkdir bin
+	g++ src\main.cpp src\dLinkedList.cpp -o bin\main.exe
+
+clean:
+	del /Q bin\main.exe
