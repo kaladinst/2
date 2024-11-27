@@ -1,3 +1,0 @@
-Dna ve Islemler txtleri "src" klasorü içinde bulunmaktadır ve kodlarda dosya okuma path'i bu konuma göre yazılmıştır.
-Txt isimleri "Dna.txt" ve "Islemler.txt" olarak ayarlanmıştır
-dosyayı "mingw32-make" kodu ile derleyip command prompta ".\bin\main.exe" komutu ile veya powershell'de "./bin/main.exe" komutuyla çalıştırabilirsiniz.
