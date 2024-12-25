@@ -1,0 +1,8 @@
+all: bin/main.exe
+
+bin/main.exe: src/List.cpp src/main.cpp src/Tree.cpp src/TreeNode.cpp
+	if not exist bin mkdir bin
+	g++ src/main.cpp src/List.cpp src/Tree.cpp src/TreeNode.cpp -o bin/main.exe
+
+clean:
+	del /Q src\*.o bin\main.exe
